@@ -21,14 +21,6 @@ pipeline {
             }
         }
 
-        stage('Build environment') {
-            steps {
-                echo "Building virtualenv"
-                sh  ''' pip install -r requirements/dev.txt
-                    '''
-            }
-        }
-
         stage('Static code metrics') {
             steps {
                 echo "Raw metrics"
