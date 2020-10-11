@@ -12,9 +12,6 @@ pipeline {
         timestamps()
     }
 
-    environment {
-      PATH="/var/lib/jenkins/miniconda3/bin:$PATH"
-    }
 
     stages {
 
